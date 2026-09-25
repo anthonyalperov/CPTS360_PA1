@@ -17,7 +17,7 @@ typedef struct cacheline
 } CacheLine;
 
 typedef struct cacheset
-{
+{ 
     CacheLine *lines;
 } CacheSet;
 
