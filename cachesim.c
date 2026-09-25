@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <math.h>
 #include <errno.h>
-
 #define _CRT_SECURE_NO_WARNINGS
 #define ADDRESS_LENGTH 64  // 64-bit memory addressing
 
@@ -367,6 +366,7 @@ int main(int argc, char* argv[])
     }
 
     free(cache);
+    
     // output cache hit and miss statistics
     print_summary(hit_count, miss_count, eviction_count);
 
